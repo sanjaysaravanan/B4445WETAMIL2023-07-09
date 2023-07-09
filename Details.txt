@@ -1,0 +1,55 @@
+
+Topics:
+
+  Component Life Cycle:
+
+    lifeCycle phases: (  )
+      1. Mouting
+      2. Updating
+      3. Unmounting
+
+    life cycle hook, useEffect
+
+    useEffect:
+      used to do execute statements in the life cycle phases
+
+    Mounting phase:
+      useEffect(() => {
+        // Statements to be executed on mounting phase
+
+        return () => {
+          // only on unmounting, provided no dependencies
+        };
+      }, []);
+
+    with dependencies
+      useEffect(() => {
+        // mounting & updating
+
+        return () => {
+          // dependency updation, unmouting
+          console.log("line 36 unmounting");
+        };
+      }, [value]);
+
+    Reference: https://codesandbox.io/s/practical-shape-tr8753
+
+    Example: https://codesandbox.io/s/throbbing-snowflake-wvp5zm
+
+Next Session:
+
+  Mock API for add, edit, delete movies data
+
+  react-router-dom
+  
+  BrouserRouter
+
+  Routes
+
+  Route
+
+  Link
+
+  path params
+
+  query params
